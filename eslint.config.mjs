@@ -19,6 +19,9 @@ const eslintConfig = [
   ),
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    plugins: {
+      "react-refresh": require("eslint-plugin-react-refresh"),
+    },
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
       "react-refresh/only-export-components": "off",
@@ -27,4 +30,3 @@ const eslintConfig = [
 ];
 
 export default eslintConfig;
-
